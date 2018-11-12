@@ -23,12 +23,7 @@ public class Main extends Application {
         stage.initStyle(StageStyle.UTILITY);
         stage.show();
         //----------------------------------------SCENE-GAME----------------------------------
-            Apple apple = new Apple();
-            Thread.sleep(1500);
-            apple.generate();
-            apple.draw();
-            Thread.sleep(1500);
-            apple.delete();
+
     }
     public static void main(String[] args) {
         launch(args);

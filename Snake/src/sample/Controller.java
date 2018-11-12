@@ -10,6 +10,11 @@ public class Controller{
     }
 
     //Nacisniecie przycisku start
-    public void btnStart(ActionEvent event){
+    public void btnStart(ActionEvent event) throws InterruptedException {
+        Apple apple = new Apple();
+        apple.generate();
+        apple.draw();
+        Thread.sleep(1500);
+        apple.delete();
     }
 }
